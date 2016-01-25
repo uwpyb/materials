@@ -250,7 +250,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Python-Programming-Workshop-for-Beginners">Python Programming Workshop for Beginners<a class="anchor-link" href="#Python-Programming-Workshop-for-Beginners">&#182;</a></h1><h3 id="Day-2:-Data-Analysis">Day 2: Data Analysis<a class="anchor-link" href="#Day-2:-Data-Analysis">&#182;</a></h3><h3 id="Friday,-Jan-31,-2016">Friday, Jan 31, 2016<a class="anchor-link" href="#Friday,-Jan-31,-2016">&#182;</a></h3><h3 id="University-of-Waterloo">University of Waterloo<a class="anchor-link" href="#University-of-Waterloo">&#182;</a></h3><p><img src="./files/party.png" width="100" \></p>
+<h1 id="Python-Programming-Workshop-for-Beginners">Python Programming Workshop for Beginners<a class="anchor-link" href="#Python-Programming-Workshop-for-Beginners">&#182;</a></h1><h3 id="Day-2:-Data-Analysis">Day 2: Data Analysis<a class="anchor-link" href="#Day-2:-Data-Analysis">&#182;</a></h3><h3 id="Friday,-Jan-31,-2016">Friday, Jan 31, 2016<a class="anchor-link" href="#Friday,-Jan-31,-2016">&#182;</a></h3><h3 id="University-of-Waterloo">University of Waterloo<a class="anchor-link" href="#University-of-Waterloo">&#182;</a></h3><p><img src="./files/lego.jpg" width="300" \></p>
 
 </div>
 </div>
@@ -292,8 +292,23 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Funtions-we-have-used-already">Funtions we have used already<a class="anchor-link" href="#Funtions-we-have-used-already">&#182;</a></h3><ul>
+<li><code>input</code>: to store whatever user types in on the keyboard in a variable</li>
+<li><code>type(x)</code>: ask Python about the data type of x</li>
+<li><code>len(x)</code>: ask Python to tell us the length of a variable x</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Functions">Functions<a class="anchor-link" href="#Functions">&#182;</a></h2><ul>
 <li>a piece of code we want to run often</li>
+<li>two things to remember: function name and function parameters</li>
 </ul>
 
 </div>
@@ -301,7 +316,7 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">say_hello_to</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
@@ -315,12 +330,11 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">say_hello_to</span><span class="p">(</span><span class="s">&quot;Ivana!&quot;</span><span class="p">)</span>
 <span class="n">say_hello_to</span><span class="p">(</span><span class="s">&quot;everybody!&quot;</span><span class="p">)</span>
-<span class="n">say_hello_to</span><span class="p">(</span><span class="s">&quot;world in peace!&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -343,6 +357,34 @@ Hello world in peace!
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">text</span> <span class="o">=</span> <span class="s">&quot;world in peace!&quot;</span>
+<span class="n">say_hello_to</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello world in peace!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -355,10 +397,10 @@ Hello world in peace!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">word</span> <span class="o">=</span> <span class="s">&#39;ABSTENTIOUS&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">word</span> <span class="o">=</span> <span class="s">&#39;MORPHOGENESIS&#39;</span>
 </pre></div>
 
 </div>
@@ -371,7 +413,7 @@ Hello world in peace!
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Exercise">Exercise<a class="anchor-link" href="#Exercise">&#182;</a></h1><p>Put following lines in the right order so that the variable <code>length</code> at the end contains the number of letters in the word 'ABSTENTIOUS'</p>
+<h1 id="Exercise">Exercise<a class="anchor-link" href="#Exercise">&#182;</a></h1><p>Put following lines in the right order so that the variable <code>length</code> at the end contains the number of letters in the word 'MORPHOGENESIS'</p>
 <hr>
 <div class="highlight"><pre><span class="mf">1.</span> <span class="n">length</span> <span class="o">=</span> <span class="n">length</span> <span class="o">+</span> <span class="mi">1</span>
 </pre></div>
@@ -431,7 +473,7 @@ Hello world in peace!
 <div class="prompt input_prompt">In&nbsp;[298]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">fruit_salad</span><span class="p">(</span><span class="n">fruit1</span><span class="o">=</span><span class="s">&#39;apples&#39;</span><span class="p">,</span><span class="n">fruit2</span><span class="o">=</span><span class="s">&#39;pears&#39;</span><span class="p">,</span><span class="n">fruit3</span><span class="o">=</span><span class="s">&#39;oranges&#39;</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span class="k">def</span> <span class="nf">fruit_salad</span><span class="p">(</span><span class="n">fruit1</span><span class="o">=</span><span class="s">&#39;apples&#39;</span><span class="p">,</span> <span class="n">fruit2</span><span class="o">=</span><span class="s">&#39;pears&#39;</span><span class="p">,</span> <span class="n">fruit3</span><span class="o">=</span><span class="s">&#39;oranges&#39;</span><span class="p">):</span>
     <span class="n">your_fruit_salad</span> <span class="o">=</span> <span class="s">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">((</span><span class="n">fruit1</span><span class="p">,</span> <span class="n">fruit2</span><span class="p">,</span> <span class="n">fruit3</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">your_fruit_salad</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">fruit_salad</span><span class="p">())</span>
@@ -468,7 +510,7 @@ Hello world in peace!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="n">fruit_salad</span><span class="p">(</span><span class="n">fruit2</span><span class="o">=</span><span class="s">&#39;cherries&#39;</span><span class="p">))</span>
@@ -483,9 +525,14 @@ Hello world in peace!
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>apples cherries oranges
-</pre>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansired">---------------------------------------------------------------------------</span>
+<span class="ansired">NameError</span>                                 Traceback (most recent call last)
+<span class="ansigreen">&lt;ipython-input-9-1e9d607bd58f&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
+<span class="ansigreen">----&gt; 1</span><span class="ansiyellow"> </span>print<span class="ansiyellow">(</span>fruit_salad<span class="ansiyellow">(</span>fruit2<span class="ansiyellow">=</span><span class="ansiblue">&apos;cherries&apos;</span><span class="ansiyellow">)</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+
+<span class="ansired">NameError</span>: name &apos;fruit_salad&apos; is not defined</pre>
 </div>
 </div>
 
@@ -505,7 +552,7 @@ Hello world in peace!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="n">fruit_salad</span><span class="p">(</span><span class="n">fruit3</span><span class="o">=</span><span class="s">&#39;melon&#39;</span><span class="p">,</span> <span class="n">fruit1</span><span class="o">=</span><span class="s">&#39;kiwi&#39;</span><span class="p">))</span>
@@ -520,9 +567,14 @@ Hello world in peace!
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>kiwi pears melon
-</pre>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansired">---------------------------------------------------------------------------</span>
+<span class="ansired">NameError</span>                                 Traceback (most recent call last)
+<span class="ansigreen">&lt;ipython-input-10-537d3486049f&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
+<span class="ansigreen">----&gt; 1</span><span class="ansiyellow"> </span>print<span class="ansiyellow">(</span>fruit_salad<span class="ansiyellow">(</span>fruit3<span class="ansiyellow">=</span><span class="ansiblue">&apos;melon&apos;</span><span class="ansiyellow">,</span> fruit1<span class="ansiyellow">=</span><span class="ansiblue">&apos;kiwi&apos;</span><span class="ansiyellow">)</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+
+<span class="ansired">NameError</span>: name &apos;fruit_salad&apos; is not defined</pre>
 </div>
 </div>
 
@@ -535,11 +587,18 @@ Hello world in peace!
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Funtions-we-have-used-already">Funtions we have used already<a class="anchor-link" href="#Funtions-we-have-used-already">&#182;</a></h3><ul>
-<li><code>raw_input</code>: to store whatever user types in on the keyboard in a variable</li>
-<li><code>type(x)</code>: ask Python about the data type of x</li>
-<li><code>len(x)</code>: ask Python to tell us the length of a variable x</li>
-</ul>
+<h1 id="Exercise">Exercise<a class="anchor-link" href="#Exercise">&#182;</a></h1><p>Write a function which returns the smallest element in a list of numbers <code>x</code>. Your function should look like this:</p>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">min_element</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">do</span> <span class="n">something</span> <span class="o">...</span>
+    <span class="k">return</span> <span class="n">something</span>
+</pre></div>
+<p>and should give outputs like this:</p>
+<div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">min_element</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">30</span><span class="p">]))</span>
+<span class="mi">1</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">min_element</span><span class="p">([</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">]))</span>
+<span class="o">-</span><span class="mi">10</span>
+</pre></div>
 
 </div>
 </div>
@@ -575,10 +634,11 @@ Hello world in peace!
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We will use:</p>
-<ul>
-<li>Numpy: for dealing with sequences of numbers</li>
-<li>Matplotlib: for plotting these sequences</li>
+<h1 id="Packages-we-will-use-today">Packages we will use today<a class="anchor-link" href="#Packages-we-will-use-today">&#182;</a></h1><ul>
+<li><p>Numpy: for dealing with sequences of numbers</p>
+</li>
+<li><p>Matplotlib: for plotting these sequences</p>
+</li>
 </ul>
 
 </div>
@@ -591,7 +651,7 @@ Hello world in peace!
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="NumPy">NumPy<a class="anchor-link" href="#NumPy">&#182;</a></h1><ul>
 <li>a collection of functions (and bunch of other things) for working with numbers in Python</li>
-<li>numbers are stored in arrays</li>
+<li>numbers in numpy are stored as sequences of numbers called <em>numpy arrays</em></li>
 </ul>
 
 </div>
@@ -599,7 +659,7 @@ Hello world in peace!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -639,7 +699,7 @@ Hello world in peace!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[290]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -681,7 +741,7 @@ Hello world in peace!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="s">&#39;The first element of numbers is:&#39;</span><span class="p">,</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -712,7 +772,7 @@ The length of numbers is: 10
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
@@ -756,7 +816,7 @@ Smallest element: 0
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Let's-load-some-data-from-our-disk">Let's load some data from our disk<a class="anchor-link" href="#Let's-load-some-data-from-our-disk">&#182;</a></h3>
+<h2 id="Downloading-and-saving-the-data">Downloading and saving the data<a class="anchor-link" href="#Downloading-and-saving-the-data">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -768,13 +828,22 @@ Smallest element: 0
 <ol>
 <li>Create a directory called "climate" on your Desktop</li>
 <li>Go here: <a href="https://github.com/uwpyb/materials/tree/master/lectures">https://github.com/uwpyb/materials/tree/master/lectures</a></li>
-<li>Dowload two following files into your "climate" folder:<ul>
+<li>There, you should see the two following files:<ul>
 <li><code>can_avg_pr.csv</code></li>
 <li><code>can_avg_temp.csv</code></li>
 </ul>
 </li>
+<li><p>Click on one of them, and then a short preview of the data in a table will appear in a new page. On that page, click on "Raw" and when a new white page opens with the data, right click "Save as..." (or "Save Page as..." on some computers) and select the climate folder on your desktop to save the file. Repeat this for the other file.</p>
+</li>
+<li><p>Once you have downloaded the files, use <code>cd</code> in IPython to go to the "climate" folder</p>
+</li>
+<li>When you're in the folder use:<ul>
+<li><code>pwd</code> to check that you really are inside that folder</li>
+<li><code>ls</code> to see that there are two files you have downloaded</li>
+</ul>
+</li>
 </ol>
-<p>If you get stuck, raise your hand (or put a red sticky note) and a mentor will come to you!</p>
+<p>If you get stuck at any of these steps, raise your hand (or put a red sticky note) and a mentor will come to you out!</p>
 
 </div>
 </div>
@@ -786,7 +855,11 @@ Smallest element: 0
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="What-are-these-.csv-files?">What are these <code>.csv</code> files?<a class="anchor-link" href="#What-are-these-.csv-files?">&#182;</a></h2><ul>
 <li>CSV stands for comma-separated values (so we have two text files containing some data separated with commas)</li>
-<li>the files are average <strong><em>precipitation</em></strong> per month and average <strong><em>temperature</em></strong> per month for Canada from 1901-2009 (from <a href="http://data.worldbank.org/developers/climate-data-api">http://data.worldbank.org/developers/climate-data-api</a>)</li>
+<li>the files are average <strong><em>precipitation</em></strong> per month and average <strong><em>temperature</em></strong> per month for Canada from 1901-2009:<ul>
+<li>from: <a href="http://data.worldbank.org/developers/climate-data-api">http://data.worldbank.org/developers/climate-data-api</a></li>
+<li>more about the data in the project</li>
+</ul>
+</li>
 </ul>
 <h3 id="Let's-peek-into-files!">Let's peek into files!<a class="anchor-link" href="#Let's-peek-into-files!">&#182;</a></h3>
 </div>
@@ -803,7 +876,7 @@ Smallest element: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[114]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">temperatures</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s">&#39;can_avg_temp.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">&#39;,&#39;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -816,7 +889,7 @@ Smallest element: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[115]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="n">temperatures</span><span class="p">)</span>
@@ -857,7 +930,11 @@ Smallest element: 0
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Similar to the numbers before but now we don't have just one row, instead we have 12 rows and 2 colums</p>
+<p>Similar to the numbers before but now we don't have just one row, instead we have 12 rows and 2 colums:</p>
+<ul>
+<li>the first column represents months (0-11)</li>
+<li>the second column the temperature</li>
+</ul>
 
 </div>
 </div>
@@ -874,7 +951,7 @@ Smallest element: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[116]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">temperatures</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -888,7 +965,7 @@ Smallest element: 0
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[116]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[19]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -913,7 +990,7 @@ Smallest element: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[117]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="s">&#39;Temperature in January:&#39;</span><span class="p">,</span> <span class="n">temperatures</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
@@ -2263,6 +2340,7 @@ ktSEgS5JTRjoktSEgS5JTRjoktSEgS5JTRjoktSEgS5JTfw/ZYpJjyocG7EAAAAASUVORK5CYII=
 <li>one for precipitation</li>
 </ul>
 </li>
+<li>we can work with two axes</li>
 </ul>
 
 </div>
