@@ -601,33 +601,6 @@ Use <code>type()</code> to figure out the type of data</p>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>4
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -742,7 +715,7 @@ Do we show the difference between a reference and not a reference?
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">box</span> <span class="o">=</span> <span class="s">&quot;kittens&quot;</span>
@@ -760,6 +733,34 @@ Do we show the difference between a reference and not a reference?
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>kittens
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">box</span> <span class="o">=</span> <span class="s">&quot;kittens&quot;</span> <span class="o">+</span> <span class="s">&quot;love&quot;</span> <span class="o">+</span> <span class="s">&quot;yarn&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">box</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>kittensloveyarn
 </pre>
 </div>
 </div>
@@ -797,11 +798,11 @@ c) <code>10</code></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">groceries</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;apples&quot;</span><span class="p">,</span> <span class="s">&quot;cabbage&quot;</span><span class="p">,</span> <span class="s">&quot;soylent&quot;</span><span class="p">]</span>
-<span class="n">groceries</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">groceries</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -812,13 +813,11 @@ c) <code>10</code></p>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&apos;apples&apos;, &apos;cabbage&apos;, &apos;soylent&apos;]</pre>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&apos;apples&apos;, &apos;cabbage&apos;, &apos;soylent&apos;]
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -989,12 +988,12 @@ c) Apples</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="c"># you can do it with strings too!</span>
 <span class="n">cat_box</span> <span class="o">=</span> <span class="s">&quot;kittens&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">cat_box</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cat_box</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">cat_box</span><span class="p">)</span>
 </pre></div>
 
@@ -1008,7 +1007,7 @@ c) Apples</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Kittens
+<pre>KITTENS
 kittens
 </pre>
 </div>
@@ -1807,7 +1806,7 @@ Ontario
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Exercise:-Quiz-the-Capitols">Exercise: Quiz the Capitols<a class="anchor-link" href="#Exercise:-Quiz-the-Capitols">&#182;</a></h1><p>Given the capitals dictionary from before, make a flash card-like quiz, where every location is the question and the capitol is the answer.</p>
+<h1 id="Exercise:-Quiz-the-Capitals">Exercise: Quiz the Capitals<a class="anchor-link" href="#Exercise:-Quiz-the-Capitals">&#182;</a></h1><p>Given the capitals dictionary from before, make a flash card-like quiz, where every location is the question and the capitol is the answer.</p>
 <p>Your output, with the user entering the answers, should look like:</p>
 
 <pre><code>What is the capitol of Croatia? Zagreb
