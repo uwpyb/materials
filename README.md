@@ -17,3 +17,6 @@ Functions, Numpy, Matplotlib
 
 Online slides day 2: http://uwpyb.github.io/materials/lectures/day_2.slides#/
 
+##### Other cool stuff you can do with Python:
+
+Python codes for examples Deepak showed are available here: https://github.com/deerishi/uwpythonworkshop
