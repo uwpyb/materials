@@ -1,22 +1,21 @@
+
+<img src="https://lh4.googleusercontent.com/4x_6Fam1syYJVcuuJvkcZtOk-JErzqw0O_fd4sTZrMhodL5N63jqp9OYA4BSqdKHLVri7u1SMb1niv0=w1680-h919" width=400px>
+
+
 # Materials
+This repository contains lecture slides and other materials used for the workshop "Programming for
+Beginners" at the University of Waterloo from Nov 11 to Nov 13, 2016.
 
-This repository contains slides and other materials used for the Python for
-Beginners Workshop held at the University of Waterloo from Jan 29 to Jan 31,
-2016.
 
-##### Friday, Jan 29: Installation
+##### Friday, Nov 11: Installation Party & First steps
 Online slides day 0: http://uwpyb.github.io/materials/lectures/day_0.slides#/
 
-##### Saturday, Jan 30: Basics
-Variables, Data Types, Lists, Dictionaries
+##### Saturday, Nov 12: Programming Basics
+More Variables, Data Types, Lists, Dictionaries
 
 Online slides day 1: http://uwpyb.github.io/materials/lectures/day_1.slides#/
 
-##### Sunday, Jan 31: Simple data analysis
+##### Sunday, Nov 13: Simple Data Analysis
 Functions, Numpy, Matplotlib
 
 Online slides day 2: http://uwpyb.github.io/materials/lectures/day_2.slides#/
-
-##### Other cool stuff you can do with Python:
-
-Python codes for examples Deepak showed are available here: https://github.com/deerishi/uwpythonworkshop
