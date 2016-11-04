@@ -106,8 +106,10 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 .highlight .err { border: 1px solid #FF0000 } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
 .highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
 .highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
 .highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
 .highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
 .highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
 .highlight .gd { color: #A00000 } /* Generic.Deleted */
@@ -250,7 +252,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Python-Programming-Workshop-for-Beginners">Python Programming Workshop for Beginners<a class="anchor-link" href="#Python-Programming-Workshop-for-Beginners">&#182;</a></h1><h3 id="Day-0:-Install-fest">Day 0: Install fest<a class="anchor-link" href="#Day-0:-Install-fest">&#182;</a></h3><h3 id="Friday,-Jan-29,-2016">Friday, Jan 29, 2016<a class="anchor-link" href="#Friday,-Jan-29,-2016">&#182;</a></h3><h3 id="University-of-Waterloo">University of Waterloo<a class="anchor-link" href="#University-of-Waterloo">&#182;</a></h3><p><img src="./files/party.png" width="100" \></p>
+<h1 id="Programming-Workshop-for-Beginners">Programming Workshop for Beginners<a class="anchor-link" href="#Programming-Workshop-for-Beginners">&#182;</a></h1><h3 id="Day-0:-Install-fest-and-first-steps">Day 0: Install fest and first steps<a class="anchor-link" href="#Day-0:-Install-fest-and-first-steps">&#182;</a></h3><h3 id="Friday,-Nov-11,-2016">Friday, Nov 11, 2016<a class="anchor-link" href="#Friday,-Nov-11,-2016">&#182;</a></h3><h3 id="University-of-Waterloo">University of Waterloo<a class="anchor-link" href="#University-of-Waterloo">&#182;</a></h3><p><img src="./files/party.png" width="100" \></p>
 
 </div>
 </div>
@@ -262,8 +264,8 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Who-are-we?">Who are we?<a class="anchor-link" href="#Who-are-we?">&#182;</a></h2><ul>
 <li>We are all students!<ul>
-<li>Instructors: Ivana and Sean</li>
-<li>Mentors: Alan, Deepak, Irish, Mariah, Sajed and Xuan</li>
+<li>Instructors: Ivana, Mariah, Jasmine</li>
+<li>Mentors: Alan, Irish, Ryan, Sajed, Stacy</li>
 </ul>
 </li>
 </ul>
@@ -276,14 +278,37 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Who-are-you?-:)">Who are you? :)<a class="anchor-link" href="#Who-are-you?-:)">&#182;</a></h2>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Admin">Admin<a class="anchor-link" href="#Admin">&#182;</a></h2><ul>
 <li>All materials are online: <code>https://github.com/uwpyb/materials/</code><ul>
-<li>these slides: <code>http://goo.gl/N5Q025</code></li>
+<li>and so are these slides: <code>http://goo.gl/N5Q025</code></li>
 </ul>
 </li>
 <li>Mailing list: <code>python-workshop@lists.uwaterloo.ca</code></li>
 <li>Interactive lecture</li>
 <li>Red and green sticky notes</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Agenda-for-today">Agenda for today<a class="anchor-link" href="#Agenda-for-today">&#182;</a></h2><ul>
+<li>install, run the software and make sure it works</li>
+<li>familiarize ourselves with the programming workflow</li>
+<li>first programming steps with variables</li>
 </ul>
 
 </div>
@@ -329,7 +354,7 @@ a.anchor-link {
 <li>Sublime Text</li>
 </ul>
 </li>
-<li><p>Put the <font color='red'>red</font> sticky note if: you don't have the files OR something does not look right during the installation process</p>
+<li><p>Put the <font color='red'>red</font> sticky note if: you don't have the files OR something does not look right during the installation process OR you're totally lost and have no idea what is going on</p>
 </li>
 <li><p>After successfully installing everything, run the program IPython</p>
 </li>
@@ -364,7 +389,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="mi">10</span><span class="o">+</span><span class="mi">5</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="mi">10</span><span class="o">+</span><span class="mi">5</span>
 </pre></div>
 
 </div>
@@ -393,7 +418,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="mi">10</span><span class="o">*</span><span class="mi">20</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="mi">10</span><span class="o">*</span><span class="mi">20</span>
 </pre></div>
 
 </div>
@@ -422,7 +447,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="mi">10</span><span class="o">-</span><span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="mi">10</span><span class="o">-</span><span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -460,7 +485,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Good evening everyone!&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Good evening everyone!&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -487,7 +512,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Good evening at 8 pm!&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Good evening at 8 pm!&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -528,8 +553,8 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Task:-Your-first-script!">Task: Your first script!<a class="anchor-link" href="#Task:-Your-first-script!">&#182;</a></h2><ol>
 <li>Create a folder called <strong>workshop</strong> on your Desktop</li>
-<li>Open Sublime Text and write two following lines in the editor:<div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="s">&quot;Good evening everyone!&quot;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;Good evening at 8pm!&quot;</span><span class="p">)</span>
+<li>Open Sublime Text and write two following lines in the editor:<div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Good evening everyone!&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Good evening at 8pm!&quot;</span><span class="p">)</span>
 </pre></div>
 </li>
 <li>Save that file as <strong>hello.py</strong> in the <strong>workshop</strong> folder</li>
@@ -570,10 +595,10 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">cd</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">cd</span>
 </pre></div>
 
 </div>
@@ -586,7 +611,7 @@ a.anchor-link {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>c:\Users\Sean Aubin
+<pre>/home/ivana
 </pre>
 </div>
 </div>
@@ -597,10 +622,10 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">cd</span> <span class="n">Desktop</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">cd</span> <span class="n">Desktop</span>
 </pre></div>
 
 </div>
@@ -613,7 +638,7 @@ a.anchor-link {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>c:\Users\Sean Aubin\Desktop
+<pre>/home/ivana/Desktop
 </pre>
 </div>
 </div>
@@ -624,10 +649,10 @@ a.anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">cd</span> <span class="n">workshop</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">cd</span> <span class="n">workshop</span>
 </pre></div>
 
 </div>
@@ -640,7 +665,8 @@ a.anchor-link {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>c:\Users\Sean Aubin\Desktop\workshop
+<pre>[Errno 2] No such file or directory: &apos;workshop&apos;
+/home/ivana/Desktop
 </pre>
 </div>
 </div>
@@ -664,7 +690,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">pwd</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">pwd</span>
 </pre></div>
 
 </div>
@@ -703,7 +729,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">ls</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">ls</span>
 </pre></div>
 
 </div>
@@ -749,7 +775,7 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">run</span> <span class="n">hello</span><span class="o">.</span><span class="n">py</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">run</span> <span class="n">hello</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 
 </div>
@@ -777,7 +803,7 @@ Good evening at 8pm!
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Learned-today:">Learned today:<a class="anchor-link" href="#Learned-today:">&#182;</a></h3><ul>
+<h3 id="Learned-so-far:">Learned so far:<a class="anchor-link" href="#Learned-so-far:">&#182;</a></h3><ul>
 <li>Python commands: <ul>
 <li>math commands</li>
 <li><strong>print</strong>: tell Python to print to the screen</li>
@@ -792,6 +818,171 @@ Good evening at 8pm!
 </li>
 </ul>
 
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Data-Types">Data Types<a class="anchor-link" href="#Data-Types">&#182;</a></h2><p><img src="./files/types.png" width="600"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Data-Types">Data Types<a class="anchor-link" href="#Data-Types">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello!&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="s2">&quot;Hello!&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>str</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>int</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="mf">1.1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>float</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="What-is...">What is...<a class="anchor-link" href="#What-is...">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>...the output of:</p>
+<p><code>type("-2.0")</code></p>
+<p>a) int</p>
+<p>b) str</p>
+<p>c) float</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="More-power:-variables">More power: variables<a class="anchor-link" href="#More-power:-variables">&#182;</a></h2>
 </div>
 </div>
 </div></section></section><section><section>
@@ -817,7 +1008,7 @@ Good evening at 8pm!
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Homework-(optional)">Homework (optional)<a class="anchor-link" href="#Homework-(optional)">&#182;</a></h3><p>Use the IPython to answer following questions:</p>
+<h3 id="Exercises">Exercises<a class="anchor-link" href="#Exercises">&#182;</a></h3><p>Use the IPython to answer following questions:</p>
 <ol>
 <li><p>How much is 1234 CAD in EUR? And in GBP? Use the print command to print the message nicely. (1 CAD = 0.65 EUR, 1 CAD = 0.49 GBP)</p>
 </li>
@@ -827,14 +1018,27 @@ Good evening at 8pm!
 <li>1/0</li>
 </ul>
 </li>
-<li>Make a script plus.py containing following lines:<div class="highlight"><pre><span class="mi">10</span><span class="o">-</span><span class="mi">43</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;I&#39;m done!&quot;</span><span class="p">)</span>
+<li>Make a script plus.py containing following lines:<div class="highlight"><pre><span></span><span class="mi">10</span><span class="o">-</span><span class="mi">43</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m done!&quot;</span><span class="p">)</span>
 </pre></div>
 What do you expect to see when you run the script? After running the script, change it so it also prints the result of subtraction!</li>
 </ol>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div></section></section>
 </div>
 </div>
