@@ -14,8 +14,10 @@ Online slides day 0: http://uwpyb.github.io/materials/lectures/day_0.slides#/
 More Variables, Data Types, Lists, Dictionaries
 
 Online slides day 1: http://uwpyb.github.io/materials/lectures/day_1.slides#/
+Project: https://github.com/uwpyb/materials/blob/master/projects/Day1_Quiz.ipynb
 
 ##### Sunday, Nov 13: Simple Data Analysis
 Functions, Numpy, Matplotlib
 
 Online slides day 2: http://uwpyb.github.io/materials/lectures/day_2.slides#/
+Project: https://github.com/uwpyb/materials/blob/master/projects/Day2_DataAnalysis.ipynb
