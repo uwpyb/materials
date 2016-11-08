@@ -1,5 +1,5 @@
 
-<img src="https://lh4.googleusercontent.com/4x_6Fam1syYJVcuuJvkcZtOk-JErzqw0O_fd4sTZrMhodL5N63jqp9OYA4BSqdKHLVri7u1SMb1niv0=w1680-h919" width=400px>
+<img src="https://raw.githubusercontent.com/uwpyb/materials/master/other/banner.png" width=400px>
 
 
 # Materials
