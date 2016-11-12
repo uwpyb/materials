@@ -1770,23 +1770,42 @@ Number of good grades 2</code></pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Dictionaries:-Data-types-that-store-associations">Dictionaries: Data types that store associations<a class="anchor-link" href="#Dictionaries:-Data-types-that-store-associations">&#182;</a></h1>
+<h1 id="Dictionaries:-Data-type-that-stores-associations">Dictionaries: Data type that stores associations<a class="anchor-link" href="#Dictionaries:-Data-type-that-stores-associations">&#182;</a></h1>
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="./files/dictionary.jpg" width="400" ></p>
+
+</div>
+</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">capitals</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Ontario&quot;</span><span class="p">:</span><span class="s2">&quot;Toronto&quot;</span><span class="p">,</span> <span class="s2">&quot;Canada&quot;</span><span class="p">:</span><span class="s2">&quot;Ottawa&quot;</span><span class="p">,</span> <span class="s2">&quot;Croatia&quot;</span><span class="p">:</span><span class="s2">&quot;Zagreb&quot;</span><span class="p">}</span>
-<span class="n">capitals</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notice the <code>{}</code> and <code>:</code>.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1798,35 +1817,18 @@ Number of good grades 2</code></pre>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">capitals</span><span class="p">[</span><span class="s2">&quot;Ontario&quot;</span><span class="p">])</span>
-</pre></div>
-
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Access-values-in-a-dictionary">Access values in a dictionary<a class="anchor-link" href="#Access-values-in-a-dictionary">&#182;</a></h2>
 </div>
 </div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">capitals</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">capitals</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Ontario&quot;</span><span class="p">:</span><span class="s2">&quot;Toronto&quot;</span><span class="p">,</span> <span class="s2">&quot;Canada&quot;</span><span class="p">:</span><span class="s2">&quot;Ottawa&quot;</span><span class="p">,</span> <span class="s2">&quot;Croatia&quot;</span><span class="p">:</span><span class="s2">&quot;Zagreb&quot;</span><span class="p">}</span>
@@ -1839,46 +1841,236 @@ Number of good grades 2</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">place</span> <span class="ow">in</span> <span class="n">capitals</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">place</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">capitals</span><span class="p">[</span><span class="s2">&quot;Ontario&quot;</span><span class="p">]</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&apos;Toronto&apos;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;capitals[&#39;Ontario&#39;]: &quot;</span> <span class="o">+</span> <span class="n">capitals</span><span class="p">[</span><span class="s2">&quot;Ontario&quot;</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>capitals[&apos;Ontario&apos;]: Toronto
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>What's the output when we run <strong><code>print(capitals[0])</code></strong> ?</p>
+<p><p>
+a) Error <br>
+b) 'Ontatio' <br>
+c) 'Toronto' <br></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">capitals</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Ontario&quot;</span><span class="p">:</span><span class="s2">&quot;Toronto&quot;</span><span class="p">,</span> <span class="s2">&quot;Canada&quot;</span><span class="p">:</span><span class="s2">&quot;Ottawa&quot;</span><span class="p">,</span> <span class="s2">&quot;Croatia&quot;</span><span class="p">:</span><span class="s2">&quot;Zagreb&quot;</span><span class="p">}</span>
+<span class="k">print</span><span class="p">(</span><span class="n">capitals</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansired">------------------------------------------------------------</span>
+<span class="ansired">KeyError</span>                   Traceback (most recent call last)
+<span class="ansigreen">&lt;ipython-input-13-83dbaf34c3b7&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
+<span class="ansigreen">      1</span> capitals <span class="ansiblue">=</span> <span class="ansiblue">{</span><span class="ansiblue">&quot;Ontario&quot;</span><span class="ansiblue">:</span><span class="ansiblue">&quot;Toronto&quot;</span><span class="ansiblue">,</span> <span class="ansiblue">&quot;Canada&quot;</span><span class="ansiblue">:</span><span class="ansiblue">&quot;Ottawa&quot;</span><span class="ansiblue">,</span> <span class="ansiblue">&quot;Croatia&quot;</span><span class="ansiblue">:</span><span class="ansiblue">&quot;Zagreb&quot;</span><span class="ansiblue">}</span><span class="ansiblue"></span>
+<span class="ansigreen">----&gt; 2</span><span class="ansired"> </span><span class="ansigreen">print</span><span class="ansiblue">(</span>capitals<span class="ansiblue">[</span><span class="ansicyan">0</span><span class="ansiblue">]</span><span class="ansiblue">)</span><span class="ansiblue"></span>
+
+<span class="ansired">KeyError</span>: 0</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There is no index in dictionaries. To access a value, we need to go through the key associated with that value.</p>
+
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Exercise:-Quiz-the-Capitals">Exercise: Quiz the Capitals<a class="anchor-link" href="#Exercise:-Quiz-the-Capitals">&#182;</a></h1><p>Given the capitals dictionary from before, make a flash card-like quiz, where every location is the question and the capitol is the answer.</p>
-<p>Your output, with the user entering the answers, should look like:</p>
+<h2 id="Loop-and-dictionary">Loop and dictionary<a class="anchor-link" href="#Loop-and-dictionary">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">capitals</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Ontario&quot;</span><span class="p">:</span><span class="s2">&quot;Toronto&quot;</span><span class="p">,</span> <span class="s2">&quot;Canada&quot;</span><span class="p">:</span><span class="s2">&quot;Ottawa&quot;</span><span class="p">,</span> <span class="s2">&quot;Croatia&quot;</span><span class="p">:</span><span class="s2">&quot;Zagreb&quot;</span><span class="p">}</span>
+</pre></div>
 
-<pre><code>What is the capitol of Croatia? Zagreb
-Right answer!
-What is the capitol of Canada? Quebec
-Sorry, the answer was Ottawa</code></pre>
-<p>Fill in the <code>BLANK</code>s!</p>
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Although dictionary is not a list, it has SOME of the same properties of a list.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">place</span> <span class="ow">in</span> <span class="n">capitals</span><span class="p">:</span>
-    <span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is the capitol of &quot;</span> <span class="o">+</span> <span class="n">BLANKBLANKBLANK</span> <span class="o">+</span> <span class="s2">&quot;? &quot;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">BLANKBLANKBLANK</span> <span class="o">==</span> <span class="n">answer</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Right answer!&quot;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">place</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="n">capitals</span><span class="p">[</span><span class="n">place</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Canada: Ottawa
+Ontario: Toronto
+Croatia: Zagreb
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Why don't we use <code>capitals["place"]</code> here?</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Exercise:-Quiz-the-Capitals">Exercise: Quiz the Capitals<a class="anchor-link" href="#Exercise:-Quiz-the-Capitals">&#182;</a></h1><p>Given the capitals dictionary from before, make a flash card-like quiz, where every location is the question and the capital is the answer.</p>
+<p>Your output, with the user entering the answers, should look like:</p>
+
+<pre><code>What is the capital of Croatia? Zagreb
+Right answer!
+What is the capital of Canada? Quebec
+Sorry, the answer was Ottawa</code></pre>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><p>
+<strong>Hint:</strong> <br></p>
+<ul>
+<li>Loop through the dictionary <br></li>
+<li>Ask user to answer the capital <br></li>
+<li>Create a variable that stores the user's answer <br></li>
+<li>Give feedback on whether the answer is correct <br></li>
+</ul>
+<p><p>
+You are encouraged to write this program yourself, but there is some skeleton code on the next slide if you want more hints.</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">________</span> <span class="ow">in</span> <span class="n">_______</span><span class="p">:</span>
+    <span class="n">_______</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">________</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">________</span> <span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">________________</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Sorry, the answer was &quot;</span> <span class="o">+</span> <span class="n">capitals</span><span class="p">[</span><span class="n">place</span><span class="p">])</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">________________</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1892,7 +2084,7 @@ Sorry, the answer was Ottawa</code></pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">place</span> <span class="ow">in</span> <span class="n">capitals</span><span class="p">:</span>
-    <span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is the capitol of &quot;</span> <span class="o">+</span> <span class="n">place</span> <span class="o">+</span> <span class="s2">&quot;? &quot;</span><span class="p">)</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is the capital of &quot;</span> <span class="o">+</span> <span class="n">place</span> <span class="o">+</span> <span class="s2">&quot;? &quot;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">capitals</span><span class="p">[</span><span class="n">place</span><span class="p">]</span> <span class="o">==</span> <span class="n">answer</span><span class="p">:</span>
         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Right answer!&quot;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
@@ -1920,25 +2112,21 @@ Sorry, the answer was Ottawa</code></pre>
 </li>
 <li>if-statements</li>
 <li>loops</li>
-<li>Getting a attributes using <strong><code>.</code></strong></li>
-<li>The machines <strong><code>print()</code></strong>, <strong><code>input()</code></strong>, <strong><code>len()</code></strong>, <strong><code>type()</code></strong></li>
 </ul>
 
 </div>
 </div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Project-Day-1">Project Day 1<a class="anchor-link" href="#Project-Day-1">&#182;</a></h2><p>Link:</p>
+<p><a href="https://github.com/uwpyb/materials/blob/master/projects/Day1_Quiz.ipynb">https://github.com/uwpyb/materials/blob/master/projects/Day1_Quiz.ipynb</a></p>
 
 </div>
 </div>
-</div>
-
 </div></section></section>
 </div>
 </div>
