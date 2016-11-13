@@ -2,3 +2,4 @@
 *.swp
 *.py[co]
 .ipynb_checkpoints/
+local/
