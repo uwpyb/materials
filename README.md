@@ -28,6 +28,8 @@ Project: https://github.com/uwpyb/materials/blob/master/projects/Day2_DataAnalys
 
 ## Helpful materials
 
-- [Basic Python Cheat Sheet](https://realpython.com/files/python_cheat_sheet_v1.pdf): short summary with examples of concepts we covered in the workshop
+- [Basic Python Cheat Sheet](https://community.computingatschool.org.uk/files/5309/original.pdf): short summary of concepts we covered in the workshop
+
+- [Longer Python (2) Cheat Sheet](https://realpython.com/files/python_cheat_sheet_v1.pdf): short summary with examples of concepts we covered in the workshop (Warning: uses Python 2, not Python 3)
 
 - [Think Python: How to think like a computer scientists?](http://www.greenteapress.com/thinkpython/thinkpython.pdf) A big and nice book on learning Python, useful to lookup some concepts or read about them in more detail. It contains way more things than we covered in the workshop.
