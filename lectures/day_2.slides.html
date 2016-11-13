@@ -11840,11 +11840,49 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Your-questions">Your questions<a class="anchor-link" href="#Your-questions">&#182;</a></h2><p>... populate after getting feedback on Sat...</p>
+<h2 id="Your-questions">Your questions<a class="anchor-link" href="#Your-questions">&#182;</a></h2><ul>
+<li>how do we test if things are not equal?</li>
+</ul>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>what is an index/indexing</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>cheat sheet </li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>WTF for loops</li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -11865,24 +11903,6 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Schedule">Schedule<a class="anchor-link" href="#Schedule">&#182;</a></h2>
-<pre><code>10:00 - 11:00: Work
-11:00 - 11:10: Rest
-11:10 - 12:00: Work
-
-12:00 - 12:45: Lunch
-12:45 - 14:45: Project
-14:45 - 15:00: Python Show-off (Deepak)
-15:00 - 15:15: Wrap up</code></pre>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Today:-functions-give-us-superpowers!">Today: functions give us superpowers!<a class="anchor-link" href="#Today:-functions-give-us-superpowers!">&#182;</a></h2><ul>
 <li>Learn what functions are, how are they used and write our own functions</li>
 <li>Use functions other people wrote<ul>
@@ -11892,6 +11912,24 @@ a.anchor-link {
 </li>
 </ul>
 <p>Project: Analyze historical temperature values Canada</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Schedule">Schedule<a class="anchor-link" href="#Schedule">&#182;</a></h2>
+<pre><code>10:00 - 11:00: Work
+11:00 - 11:05: Rest
+11:10 - 12:15: Work
+
+12:15 - 12:45: Lunch
+12:45 - 14:45: Project
+14:45 - 15:00: Python Demo (Deepak)
+15:00 - 15:15: Wrap up</code></pre>
 
 </div>
 </div>
@@ -12026,20 +12064,138 @@ a.anchor-link {
 
 </div>
 </div>
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># exercise: write a fn lb_to_kg</span>
-<span class="c1"># if you are done, how would you check if your fn is correct</span>
-<span class="n">kg_to_lb</span><span class="p">(</span><span class="n">lb_to_kg</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="o">==</span> <span class="n">x</span>
-<span class="c1">#print statements</span>
-<span class="c1">#^split this thing, then put it together</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">kg_to_lb</span><span class="p">(</span><span class="n">weight_kg</span><span class="p">):</span>
+    <span class="n">weight_lb</span> <span class="o">=</span> <span class="n">weight_kg</span> <span class="o">*</span> <span class="mf">2.2</span>
+    <span class="k">return</span> <span class="n">weight_lb</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">kg_to_lb</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>4.4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Exercise:-pounds-to-kilograms">Exercise: pounds to kilograms<a class="anchor-link" href="#Exercise:-pounds-to-kilograms">&#182;</a></h3><p>Write a function that converts pounds to kilograms.</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">lb_to_kg</span><span class="p">(</span><span class="n">weight_lb</span><span class="p">):</span>
+    <span class="n">weight_kg</span> <span class="o">=</span> <span class="n">weight_lb</span> <span class="o">/</span> <span class="mf">2.2</span>
+    <span class="k">return</span> <span class="n">weight_kg</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>How do we know if this function is correct?</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">lb_to_kg</span><span class="p">(</span><span class="mf">4.4</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>2.0</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">kg_to_lb</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>4.4</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -12773,7 +12929,7 @@ Smallest element: 0
 </div>
 </div>
 
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[31]:</div>
@@ -13621,22 +13777,63 @@ AABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="What's-next?">What's next?<a class="anchor-link" href="#What's-next?">&#182;</a></h2><ul>
+<li>more information about available resources</li>
+<li>take advantage of CS courses at the Uni: CS 116 is also using Python</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Thanks!">Thanks!<a class="anchor-link" href="#Thanks!">&#182;</a></h2><p>Lunches and coffee breaks provided by:</p>
 <ul>
-<li><p>Google for Education Program:
-<img src="https://bconnected.berkeley.edu/sites/default/files/styles/panopoly_image_original/public/logo_lockup_for_education_color_1_0.png?itok=gSfJOmXT" width="400"></p>
-</li>
-<li><p>Women in Computer Science @ UW:
-<img src="http://wics.uwaterloo.ca/images/logo.png" width="200"></p>
-</li>
-<li><p>And many nice people all over the world who write programs for free, so other people can use them, learn and improve!</p>
-</li>
+<li>Women in Computer Science @ UW:
+<img src="http://wics.uwaterloo.ca/images/logo.png" width="200"></li>
 </ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Google for Education Program:
+<img src="https://bconnected.berkeley.edu/sites/default/files/styles/panopoly_image_original/public/logo_lockup_for_education_color_1_0.png?itok=gSfJOmXT" width="400"></li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>And many nice people all over the world who write programs for free, so other people can use them, learn and improve!</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Help us by filling out the short survey! (coming soon)</p>
 
 </div>
 </div>
-</div></section></section>
+</div></div></section></section>
 </div>
 </div>
 
