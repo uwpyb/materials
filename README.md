@@ -26,6 +26,8 @@ Online slides day 2: http://uwpyb.github.io/materials/lectures/day_2.slides#/
 
 Project: https://github.com/uwpyb/materials/blob/master/projects/Day2_DataAnalysis.ipynb
 
+Deepak's presentation: https://github.com/deerishi/uwpythonworkshop
+
 ## Helpful materials
 
 - [Basic Python Cheat Sheet](https://community.computingatschool.org.uk/files/5309/original.pdf): short summary of concepts we covered in the workshop
