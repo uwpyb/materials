@@ -42,10 +42,18 @@ In the workshop we have used IPython and Sublime Text. However, there are plenty
   - the slides we made for the workshop were made in Jupyter Notebook with Python! 
 
 ### Advice from Sean:
-What else can I learn about Python and what can I do with it? You’ve already learned how to do data analysis and automate boring tasks, but there’s a pretty wide world out there: Object Oriented Programming, to organise your code better.
-Making Videogames? Don’t know much about this in Python or in any language. You’ll have to research this on your own.
+
+*What else can I learn about Python and what can I do with it?*
+
+You’ve already learned how to do data analysis and automate boring tasks, but there’s a pretty wide world out there: Object Oriented Programming, to organise your code better.
+
+*What about making Videogames?*
+
+Don’t know much about this in Python or in any language. You’ll have to research this on your own.
 Psychological experiments (there were a lot of psychologists in this workshop) use [PsychoPy](http://www.psychopy.org/).
 If you want to make brain models, use [Nengo](https://github.com/nengo/nengo) (which Ivana and Sean use every day).
+
+*What about websites and visualisations?*
 
 If you want to make an website or program nice visual things, Python won’t help you that much (although it is good at making static websites). What you’re looking for is JavaScript, which has a lot of stuff that you’ll recognise from Python. [CodeAcademy](https://www.codecademy.com/) and [Khan Academy](https://www.khanacademy.org/) both have good interactive tutorials on JavaScript. Then you can start looking into D3.js. To get help or to ask general questions about Python, there’s local meetups with [WatPy](http://watpy.ca/) and in Sean’s experience the people in the StackOverflow chat rooms are quite friendly.
 
