@@ -6,6 +6,7 @@
 If you want to rehearse what you learned in the workshop, there are [several Python tutorials](https://wiki.python.org/moin/BeginnersGuide/Programmers) covering basics which walk you through every step:
 - Google's Python class: https://developers.google.com/edu/python/
 - Automate the Boring Stuff: http://automatetheboringstuff.com/
+- European Python Course: https://www.python-course.eu/python3_course.php
 
 #### Specific Packages
 For plotting:
