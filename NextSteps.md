@@ -3,10 +3,9 @@
 
 
 #### Basics
-If you want to rehearse what you learned in the workshop, there are several Python tutorials covering basics which walk you through every step:
-- Official Python website: https://www.python.org/about/gettingstarted/
-- Code Academy: https://www.codecademy.com/
-- Learn Python the Hard Way: http://learnpythonthehardway.org/
+If you want to rehearse what you learned in the workshop, there are [several Python tutorials](https://wiki.python.org/moin/BeginnersGuide/Programmers) covering basics which walk you through every step:
+- Google's Python class: https://developers.google.com/edu/python/
+- Automate the Boring Stuff: http://automatetheboringstuff.com/
 
 #### Specific Packages
 For plotting:
@@ -31,11 +30,13 @@ Machine learning:
 Image processing:
 - scikit-image: http://scikit-image.org/
 
-Web development:
+Hardcore web development:
 - Django: https://www.djangoproject.com/
  
 #### Other programming environments
-In the workshop we have used IPython and Sublime Text. However, there are plenty of other options when it comes to writing code. These are just some options you might want to take a look at:
+In the workshop we have used IPython and Visual Studio Code. However, there are plenty of other options when it comes to writing code. These are just some options you might want to take a look at:
+- Python Tutor: http://pythontutor.com/
+  - Great for visualising your code when something weird happens.
 - PyCharm: http://www.jetbrains.com/pycharm/
 - Spyder: https://en.wikipedia.org/wiki/Spyder_%28software%29
 - Jupyter Notebook: http://jupyter.org/
@@ -45,17 +46,23 @@ In the workshop we have used IPython and Sublime Text. However, there are plenty
 
 *What else can I learn about Python and what can I do with it?*
 
-You’ve already learned how to do data analysis and automate boring tasks, but there’s a pretty wide world out there: Object Oriented Programming, to organise your code better.
+You’ve already learned how to do data analysis and automate boring tasks, but there’s a pretty wide world out there:
 
-*What about making Videogames?*
-
-Don’t know much about this in Python or in any language. You’ll have to research this on your own.
-Psychological experiments (there were a lot of psychologists in this workshop) use [PsychoPy](http://www.psychopy.org/).
-If you want to make brain models, use [Nengo](https://github.com/nengo/nengo) (which Ivana and Sean use every day).
+- **Object Oriented Programming** to organise your code better.
+- **Psychological experiments** (there were a lot of psychologists in this workshop) use [PsychoPy](http://www.psychopy.org/).
+- **Brain models** use [Nengo](https://github.com/nengo/nengo) (which Ivana and Sean use every day).
 
 *What about websites and visualisations?*
 
-If you want to make an website or program nice visual things, Python won’t help you that much (although it is good at making static websites). What you’re looking for is JavaScript, which has a lot of stuff that you’ll recognise from Python. [CodeAcademy](https://www.codecademy.com/) and [Khan Academy](https://www.khanacademy.org/) both have good interactive tutorials on JavaScript. Then you can start looking into D3.js. To get help or to ask general questions about Python, there’s local meetups with [WatPy](http://watpy.ca/) and in Sean’s experience the people in the StackOverflow chat rooms are quite friendly.
+If you want to make a reactive website or program nice visual things, Although it is good at making static websites, Python won’t help you that much. What you’re looking for is JavaScript, which has a lot of stuff that you’ll recognise from Python. [Khan Academy](https://www.khanacademy.org/) has a good interactive tutorial on JavaScript.
+
+*What about videogames?*
+
+Don’t know much about this in Python or in any language. You’ll have to research this on your own. PyGame is good for getting started for sure!
+
+*Where can I get help?*
+
+To get help or to ask general questions about Python, there’s local meetups with [WatPy](http://watpy.ca/) and in Sean’s experience the people in the StackOverflow chat rooms are quite friendly.
 
 
 HapPy coding! :)
