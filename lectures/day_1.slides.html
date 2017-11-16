@@ -36,7 +36,7 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 
 <!-- Loading the mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -58,7 +58,7 @@ if( window.location.search.match( /print-pdf/gi ) ) {
     <!-- End of mathjax configuration -->
 
 <!-- Get Font-awesome from cdn -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
 
 <style type="text/css">
     /*!
@@ -11770,404 +11770,6 @@ ul.typeahead-list > li > a {
 .ansi-bold { font-weight: bold; }
 
     </style>
-<style type="text/css">
-    /*
-  Dark theme for Jupyter Notebook/iPython 5
-  Author: Sean Aubin
-  Repo at: https://github.com/powerpak/jupyter-dark-theme
-
-  Inspired by and adapted from the following:
-  PowerPack's Jupyter Dark Theme (https://github.com/powerpak/jupyter-dark-theme)
-  Base16 for iPython Notebook (https://github.com/nsonnad/base16-ipython-notebook)
-  Base16 Twilight Dark, David Hart (http://hart-dev.com)
-  CodeMirror template adapted for IPython Notebook by Nikhil Sonnad (https://github.com/nsonnad/base16-ipython-notebook)
-  CodeMirror template by Jan T. Scott (https://github.com/idleberg/base16-chrome-devtools)
-  Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
-*/
-
-body, body.notebook_app.command_mode {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* 
-  SET THE CODE/MONOSPACE FONT 
-
-  I prefer Bitsream Vera Sans Mono, which is freely downloadable here:
-  http://www.dafont.com/bitstream-vera-mono.font
-  However, there are plenty of alternatives at http://programmingfonts.org/
-  in which case, add your preferred font to the stack below.
-*/
-
-.CodeMirror pre, .CodeMirror-dialog, .CodeMirror-dialog .CodeMirror-search-field, .terminal-app .terminal {
-    font-family: "Bitstream Vera Sans Mono", Monaco, monospace;
-    font-size: 9pt;
-}
-.terminal-app .terminal { line-height: 1.3em; }
-div.output pre, div.output code, .rendered_html pre, .rendered_html code, div.completions select, div.container pre {
-  font-family: "Bitstream Vera Sans Mono", Monaco, monospace;
-}
-div.output pre, div.output code, .rendered_html pre, .rendered_html p code, div.completions select, div.container pre {
-    font-size: 9pt;
-}
-
-div.prompt, div.tooltiptext pre {
-    font-family: "Bitstream Vera Sans Mono", Monaco, monospace;
-    font-size: 8pt;
-}
-
-div.input_area {
-    border-color: rgba(0, 0, 0, 0.10);
-    background: rbga(0, 0, 0, 0.5);
-}
-
-/* GLOBALS */
-
-@media not print { body { background-color: #eee; } }
-a { color: #CF4A4C; }
-a:hover, a:focus { color: #DE6F71; }
-
-/* INTRO PAGE */
-
-body[data-notebook-path] { background-color: #222; }
-body[data-notebook-path] #header, .terminal-app #header { display: none !important; }
-
-.tabbable { color: #979797; }
-.nav-tabs { border-bottom-color: #444; }
-.nav-tabs > li > a:hover, .nav > li > a:focus {
-  background-color: #333;
-  border-color: #222 #222 #555 #222;
-}
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { 
-  color: #979797;
-  background-color: #444;
-  border-top-color: #444;
-  border-right-color: #444;
-  border-left-color: #444;
-}
-.list_container { border-color: #444; }
-.list_container > div { border-bottom-color: #444; }
-.list_item:hover { background-color: #333; }
-.list_header { background-color: #444; }
-#notebook_list input[type="checkbox"] { opacity: 0.3; }
-#notebook_list input[type="checkbox"]:checked { opacity: 1; }
-.item_icon { color: #777; }
-.panel { border-color: #444; background-color: #222; }
-.panel-default > .panel-heading { border-color: #444; }
-#site .panel-group .panel .panel-heading { background-color: #444; }
-#running .panel-group .panel .panel-body .list_container .list_item { border-bottom-color: #444; }
-
-/* Dropdown menus */
-
-.dropdown-menu {
-  background: rgba(50, 50, 50, 0.95);
-  color: #b7b7b7;
-}
-.dropdown-menu > li > a, .dropdown-submenu > a:after, .dropdown-menu > li > a:visited:after {
-  color: #b7b7b7;
-}
-.dropdown-menu .divider {
-  background-color: #444;
-}
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-  color: #fff;
-  background-color: #444;
-}
-.dropdown-menu > li > a:hover:after, .dropdown-menu > li > a:focus:after, 
-.dropdown-menu > li > a:active:after {
-  color: #fff;
-}
-
-/* TERMINAL INTERFACE */
-.terminal-app #site { background: #272727; }
-.terminal-app .terminal { background: #141414 !important; }
-
-/* NOTEBOOK AND EDITOR INTERFACE */
-
-/* comment out the following line to unhide the toolbar */
-div#maintoolbar { display: none !important; }
-
-/*
-  Header UI styles
-*/
-
-body.notebook_app > #header { display: block !important; }
-.notebook_app > #header, .edit_app > #header { 
-  background-color: #333;
-  color: #b7b7b7;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-.edit_app #menubar .navbar { margin-bottom: 0; }
-body > #header .header-bar { background: #444; }
-#header .navbar-brand { display: none; }
-#header .filename { margin-left: 0; margin-right: 2em; }
-#header .current_kernel_logo { width: 24px; height: 24px; }
-span.save_widget span.filename:hover {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
-}
-.navbar-default {
-  background: transparent;
-  color: #b7b7b7;
-  border-color: #444;
-}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #fff;
-}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, 
-.navbar-default .navbar-nav > .open > a:focus {
-  color: #fff;
-  background-color: #444;
-}
-
-@media not print {
-  .notebook_app #notebook {
-    background: #111;
-  }
-
-  .notebook_app #notebook-container, .edit_app #texteditor-backdrop {
-    background: #272727;
-  }
-}
-
-/*
-  Inverting the notebook editor UI
-*/
-
-.celltoolbar {
-  border-color: #444;
-  background: #444;
-  color: #b7b7b7;
-}
-.ctb_global_show .ctb_show ~ div.text_cell_render {
-  border-color: #444;
-}
-.celltoolbar select {
-  opacity: 0.5;
-}
-
-.modal-dialog .modal-content, .popover, .popover .popover-title {
-  background: rgba(50, 50, 50, 0.95);
-  color: #b7b7b7;
-}
-.modal-header, .popover-title {
-  border-bottom-color: #444;
-}
-.modal-footer {
-  border-top-color: #444;
-}
-.modal-dialog .close {
-  color: #fff;
-  text-shadow: 0 1px 0 #000;
-}
-.modal-dialog .alert-info {
-  background-color: #373E42;
-  color: #d9edf7;
-}
-.popover.bottom > .arrow:after {
-  border-bottom-color: #444;
-}
-
-.btn:focus, .btn:active:focus {
-  outline: 5px auto rgba(102, 175, 233, 0.3);
-  outline-offset: -1px;
-}
-.btn-default {
-  background-color: #555;
-  border-color: #222;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
-  color: #aaa;
-}
-.btn-default:focus, .btn-default:hover {
-  background-color: #555;
-  border-color: #222;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
-  color: #bbb;
-}
-.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
-  background-color: #474747;
-  color: #999;
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
-}
-.btn-default.disabled:focus, .btn-default.disabled:hover, 
-.btn-default[disabled]:focus, .btn-default[disabled]:hover {
-  background-color: #555;
-  border-color: #222;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
-  color: #aaa;
-}
-.btn-default:active:hover, .btn-default:active:focus, 
-.open > .dropdown-toggle.btn-default:hover, .open > .dropdown-toggle.btn-default:focus {
-  background-color: #474747;
-  color: #999;
-  border-color: #222;
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
-}
-
-.btn-primary {
-  color: #eee;
-  background-color: #4481b7;
-  border-color: #222;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-}
-.btn-primary:focus, .btn-primary:hover {
-  background-color: #4481b7;
-  color: #fff;
-}
-.btn-primary:active {
-  background-color: #306ea6;
-  color: #ccc;
-}
-.btn-primary:active:hover, .btn-primary:active:focus {
-  background-color: #306ea6;
-  color: #ccc;
-}
-
-.form-control {
-  background: #222;
-  color: #eee;
-  border-color: #777;
-}
-.form-control:focus {
-  border-color: #458ac1;
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.3);
-}
-.form-control::selection {
-  background: rgba(221, 240, 255, 0.19);
-}
-
-#complete {
-  border-color: #444;
-  background: rgba(50, 50, 50, 0.95);
-  color: #b7b7b7;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-.completions select {
-  background: rgba(50, 50, 50, 0.95);
-  color: #b7b7b7;
-}
-
-/*
-  Set fonts and styles for outputted content
-*/
-
-div#notebook .text_cell_render {
-  font-size: 16.25px;
-  font-weight: 300;
-  line-height: 1.25;
-}
-
-.rendered_html li p {
-  margin-top: 1em;
-}
-
-.rendered_html h1 {
-    color: #CF4A4C;
-}
-
-div.output_html { font-family: sans-serif; }
-
-/*
-  Set colors and styles that we only want on the screen, not for print
-*/
-
-@media not print {
-  .notebook_app div.cell.running .input .input_area { 
-    border-left-color: #82591E;
-    -webkit-animation-name: pulseBorder;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-timing-function: ease-in-out;
-  }
-  @-webkit-keyframes pulseBorder {
-    from { border-left-color: #82591E; }
-    to { border-left-color: #eea236; }
-  }
-  
-  .notebook_app div.input_prompt {color: #9b703f;}
-  .notebook_app div.output_prompt {color: #9b859d;}
-  .notebook_app div.input_area {
-    border-radius: 0px;
-    border: 1px solid #464b50;
-  }
-  .notebook_app div.output_subarea { max-width: 100%; }
-  .notebook_app div.output_area pre { font-weight: normal; color: #979797; }
-  .notebook_app div.output_subarea { font-weight: normal; color: #979797; }
-  .notebook_app div.output_png { background-color: #808080; }
-  .notebook_app div.output_stderr {background-color: #A0783C;}
-  .notebook_app div.output_stderr pre {color: #eee;}
-
-  .notebook_app .rendered_html table, .notebook_app .rendered_html th, .notebook_app .rendered_html tr, .notebook_app .rendered_html td {
-    border: 1px  #979797 solid;
-    color: #979797;
-  }
-  .notebook_app div.text_cell_render, .notebook_app div.output_html { color: #979797; }
-  .notebook_app table.dataframe tr { border: 1px #979797; }
-
-  .notebook_app .rendered_html pre, .notebook_app .rendered_html code {
-    border: 0;
-    background-color: #444;
-    color: #b0b0b0;
-    padding: 0;
-  }
-}
-
-/*
-  Terminal text coloring
-*/
-
-span.ansiblack {color: #323537;}
-span.ansiblue {color: #afc4db;}
-span.ansigray {color: #838184;}
-span.ansigreen {color: #8f9d6a;}
-span.ansipurple {color: #9b859d;}
-span.ansired {color: #cf6a4c;}
-span.ansiyellow {color: #f9ee98;}
-
-/*
-  Code editing
-*/
-
-.CodeMirror {background: #141414; color: #F8F8F8;}
-div.CodeMirror-selected {background: rgba(221, 240, 255, 0.19) !important;}
-#texteditor-backdrop #texteditor-container .CodeMirror-gutter, .CodeMirror-gutters {background: #444; border-right: 0px; color: #777;}
-.CodeMirror-linenumber {color: #b4b7b4;}
-.CodeMirror-cursor {border-left: 1px solid #A7A7A7 !important; margin-top: -2px; min-height: 18px;} 
-
-.CodeMirror span.cm-comment {color: #5F5A60; font-style: italic;}
-.CodeMirror span.cm-atom {color: #CF6A4C;}
-.CodeMirror span.cm-number {color: #CF6A4C;}
-
-.CodeMirror span.cm-property {color: #F8F8F8;}
-.CodeMirror span.cm-attribute {color: #198844;}
-.CodeMirror span.cm-keyword {color: #CDA869; font-weight: normal;}
-.CodeMirror span.cm-string {color: #8F9D6A;}
-.CodeMirror span.cm-string-2 {color: #E9C062;} /* regexp */
-.CodeMirror span.cm-operator {color: #CDA869;}
-.CodeMirror span.cm-builtin {color: #A36AC7;}
-
-.CodeMirror span.cm-variable {color: #F8F8F8;}
-.CodeMirror span.cm-variable-2 {color: #7587A6;}
-.CodeMirror span.cm-variable-3 {color: #7587A6;}
-.CodeMirror span.cm-def {color: #9B703F;}
-.CodeMirror span.cm-error {color: #F8F8F8; background-color: rgba(86, 45, 86, 0.2);}
-.CodeMirror span.cm-bracket {color: #373b41;}
-.CodeMirror span.cm-tag {color: #7587A6;}
-.CodeMirror span.cm-link {color: #A36AC7;}
-
-.CodeMirror .CodeMirror-matchingbracket { background-color: #dd3; color: #303030 !important;}
-
-/*
-  Markdown editing
-*/
-
-.cm-s-default span.cm-header {color: #CF4A4C;}
-.cm-s-default span.cm-variable-2 {color: #7587A6;}
-.cm-s-default span.cm-comment {color: #7F7A80;}
-    </style>
 
 
 <style type="text/css">
@@ -12252,7 +11854,8 @@ a.anchor-link {
 <div class="reveal">
 <div class="slides">
 <section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12261,7 +11864,8 @@ a.anchor-link {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12277,7 +11881,8 @@ a.anchor-link {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12292,7 +11897,8 @@ a.anchor-link {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12300,14 +11906,15 @@ a.anchor-link {
 <ol>
 <li>Lists</li>
 <li>Conditions </li>
-<li>Talking to the user using <strong><code>input()</code></strong></li>
+<li>Talking to the user using <code>input()</code></li>
 <li>Repeating steps with for loops</li>
 </ol>
 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12323,7 +11930,8 @@ a.anchor-link {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12332,7 +11940,8 @@ a.anchor-link {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12359,9 +11968,7 @@ a.anchor-link {
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[&#39;apples&#39;, &#39;blueberries&#39;, &#39;chocolate&#39;]
@@ -12370,9 +11977,7 @@ a.anchor-link {
 </div>
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[1]:</div>
-
 
 
 
@@ -12386,7 +11991,8 @@ a.anchor-link {
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12412,9 +12018,7 @@ a.anchor-link {
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>apples
@@ -12443,9 +12047,7 @@ a.anchor-link {
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>chocolate
@@ -12474,9 +12076,7 @@ a.anchor-link {
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>chocolate
@@ -12488,7 +12088,8 @@ a.anchor-link {
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12518,9 +12119,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_text output_error">
 <pre>
@@ -12537,7 +12136,8 @@ c) Apples</p>
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12562,9 +12162,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[6]:</div>
-
 
 
 
@@ -12597,9 +12195,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[&#39;blueberries&#39;, &#39;chocolate&#39;]
@@ -12612,7 +12208,8 @@ c) Apples</p>
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12638,9 +12235,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[8]:</div>
-
 
 
 
@@ -12654,19 +12249,21 @@ c) Apples</p>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>What is the result of <strong>groceries[0:3]</strong>:</p>
-<p>a) <strong>IndexError</strong></p>
-<p>b) <strong>['blueberries', 'chocolate']</strong></p>
-<p>c) <strong>['apples', 'blueberries', 'chocolate']</strong></p>
+<p>What is the result of <code>groceries[0:3]</code>:</p>
+<p>a) <code>IndexError</code></p>
+<p>b) <code>['blueberries', 'chocolate']</code></p>
+<p>c) <code>['apples', 'blueberries', 'chocolate']</code></p>
 
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12692,9 +12289,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[36]:</div>
-
 
 
 
@@ -12726,9 +12321,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[&#39;apples&#39;, &#39;blueberries&#39;, &#39;cranberries&#39;]
@@ -12740,7 +12333,8 @@ c) Apples</p>
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12766,9 +12360,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[3]:</div>
-
 
 
 
@@ -12782,7 +12374,8 @@ c) Apples</p>
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12809,9 +12402,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>b
@@ -12840,9 +12431,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>m
@@ -12871,9 +12460,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[12]:</div>
-
 
 
 
@@ -12887,7 +12474,8 @@ c) Apples</p>
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12913,9 +12501,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_text output_error">
 <pre>
@@ -12932,7 +12518,8 @@ c) Apples</p>
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12940,7 +12527,8 @@ c) Apples</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12977,11 +12565,12 @@ c) Apples</p>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Since <code>"apple" + "water"</code> gives <code>"applewater"</code> what will <code>drinks+food</code> do?</p>
+<p>Since <code>"apple" + "water"</code> gives <code>"applewater"</code> what will <code>drinks+food</code>  do?</p>
 <p>a) Give an error</p>
 <p>b) <code>["pop", "water", "juice", "apple", "pear", "bread"]</code></p>
 <p>c) <code>["popapple", "waterpear", "juicebread"]</code></p>
@@ -13003,7 +12592,8 @@ c) Apples</p>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13015,7 +12605,8 @@ c) Apples</p>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13041,9 +12632,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_text output_error">
 <pre>
@@ -13061,7 +12650,8 @@ c) Apples</p>
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13086,9 +12676,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[12]:</div>
-
 
 
 
@@ -13119,9 +12707,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[14]:</div>
-
 
 
 
@@ -13152,9 +12738,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[3]:</div>
-
 
 
 
@@ -13185,9 +12769,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[9]:</div>
-
 
 
 
@@ -13218,9 +12800,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[5]:</div>
-
 
 
 
@@ -13255,9 +12835,7 @@ c) Apples</p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>True
@@ -13267,9 +12845,7 @@ True
 </div>
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[8]:</div>
-
 
 
 
@@ -13283,7 +12859,8 @@ True
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13299,7 +12876,8 @@ c) Error<br></p>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13329,9 +12907,7 @@ c) Error<br></p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>True
@@ -13345,7 +12921,8 @@ True
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13359,7 +12936,8 @@ True
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13373,7 +12951,8 @@ True
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13398,9 +12977,7 @@ True
 
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[16]:</div>
-
 
 
 
@@ -13431,9 +13008,7 @@ True
 
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[17]:</div>
-
 
 
 
@@ -13464,9 +13039,7 @@ True
 
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[18]:</div>
-
 
 
 
@@ -13480,7 +13053,8 @@ True
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13495,7 +13069,8 @@ c) Error<br></p>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13524,9 +13099,7 @@ c) Error<br></p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Go for a walk!
@@ -13538,7 +13111,8 @@ c) Error<br></p>
 </div>
 
 </div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13572,9 +13146,7 @@ c) "Go for a walk!"<br></p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Go for a walk!
@@ -13586,7 +13158,8 @@ c) "Go for a walk!"<br></p>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13595,7 +13168,8 @@ c) "Go for a walk!"<br></p>
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13625,9 +13199,7 @@ c) "Go for a walk!"<br></p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Do your work!
@@ -13639,7 +13211,8 @@ c) "Go for a walk!"<br></p>
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13669,9 +13242,7 @@ c) "Go for a walk!"<br></p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Go for a walk!
@@ -13683,7 +13254,8 @@ c) "Go for a walk!"<br></p>
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13714,9 +13286,7 @@ c) "Go for a walk!"<br></p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Go for a walk!
@@ -13728,7 +13298,8 @@ c) "Go for a walk!"<br></p>
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13754,9 +13325,7 @@ c) "Go for a walk!"<br></p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>What&#39;s your name?Sean
@@ -13769,7 +13338,8 @@ Hello Sean
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13795,9 +13365,7 @@ Hello Sean
 
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[17]:</div>
-
 
 
 
@@ -13811,7 +13379,8 @@ Hello Sean
 </div>
 
 </div></div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13838,9 +13407,7 @@ Hello Sean
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>How old are you?2
@@ -13849,9 +13416,7 @@ Hello Sean
 </div>
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_text output_error">
 <pre>
@@ -13869,7 +13434,8 @@ Hello Sean
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13901,9 +13467,7 @@ Hello Sean
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Enter the amount of cupcakes you desire: 2
@@ -13916,7 +13480,8 @@ Your order costs 2.5
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13983,9 +13548,7 @@ Your order costs 2.5
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Enter how many slices of pizza you want: 12
@@ -13999,7 +13562,8 @@ Here is your change: 12.0
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14042,9 +13606,7 @@ Here is your change: 12.0
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Hi five Alan
@@ -14060,7 +13622,8 @@ Hi five Stacy
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14069,7 +13632,8 @@ Hi five Stacy
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14095,9 +13659,7 @@ Hi five Stacy
 
 
 <div class="output_area">
-
 <div class="prompt output_prompt">Out[42]:</div>
-
 
 
 
@@ -14129,9 +13691,7 @@ Hi five Stacy
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Hi five Alan
@@ -14147,7 +13707,8 @@ Hi five Stacy
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14176,9 +13737,7 @@ Hi five Stacy
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>11
@@ -14193,7 +13752,8 @@ Hi five Stacy
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14221,9 +13781,7 @@ Hi five Stacy
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>k
@@ -14239,7 +13797,8 @@ y
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14274,9 +13833,7 @@ y
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>0
@@ -14293,7 +13850,8 @@ Total 5
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14330,9 +13888,7 @@ y 4</code></pre>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>kitty 0
@@ -14348,7 +13904,8 @@ kitty 4
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14381,7 +13938,8 @@ kitty 4
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14413,9 +13971,7 @@ kitty 4
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>k d
@@ -14431,7 +13987,8 @@ y y
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14444,7 +14001,8 @@ Valid</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14474,7 +14032,8 @@ Valid</code></pre>
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14484,7 +14043,8 @@ How do we count the number of characters in a tweet?</p>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14518,9 +14078,7 @@ How do we count the number of characters in a tweet?</p>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>11
@@ -14533,7 +14091,8 @@ Valid
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14564,9 +14123,7 @@ Valid
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>11
@@ -14579,7 +14136,8 @@ Valid
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14592,7 +14150,8 @@ Number of good grades 2</code></pre>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14602,7 +14161,8 @@ Number of good grades 2</code></pre>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14639,9 +14199,7 @@ Number of good grades 2</code></pre>
 
 
 <div class="output_area">
-
 <div class="prompt"></div>
-
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>WOW! 81
@@ -14656,7 +14214,8 @@ Number of good grades 2
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
